@@ -1,12 +1,12 @@
-# Police Scotland Knowledge Base
+Police Scotland Knowledge Base - static HTML export
 
-This repository contains a Next.js + Tailwind CSS static documentation site scaffold. It aims to replicate the layout, navigation and user experience of a GitBook-style documentation portal while remaining original and suitable for Police Scotland themed roleplay use.
+This repository was converted to a plain static HTML/CSS/JS site on user request.
 
-How to run locally:
+How to use:
 
-1. Install dependencies: npm install
-2. Start dev server: npm run dev
+- Open index.html in a browser to view the homepage.
+- The main documentation page example is at /docs/on-duty-bulletin/state-codes/index.html
 
 Notes:
-- Content files are stored under /docs as Markdown (index.md per folder).
-- A lightweight client-side search reads /public/search-index.json. A node script can be added to generate the index from /docs.
+- Search uses a small static search-index.json and a simple client-side search.
+- To add more pages, create folders under /docs and add index.html files.

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>State Codes — Police Scotland Knowledge Base</title>
+  <meta name="description" content="State codes reference for Police Scotland roleplay use">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">PS</div>
+        <div class="site-title">
+          <div class="title">Police Scotland Knowledge Base</div>
+          <div class="subtitle">Public documentation portal</div>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="global-search" class="search" placeholder="Search (press /)" aria-label="Search site">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn">Dark</button>
+        <a class="btn primary" href="mailto:issues@policescotland.example">Report an Issue</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-top">
+        <div class="contents-title">Contents</div>
+        <button id="toggle-sidebar" class="btn small">Collapse</button>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <div class="nav-group">
+          <div class="nav-heading">On Duty Bulletin</div>
+          <ul>
+            <li><a href="/docs/on-duty-bulletin/state-codes/index.html" class="active">State Codes</a></li>
+            <li><a href="#">Status Codes</a></li>
+            <li><a href="#">Incident Grading</a></li>
+            <li><a href="#">Priority Levels</a></li>
+            <li><a href="#">Callsigns</a></li>
+            <li><a href="#">Airwave Radio Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-heading">Communication</div>
+          <ul>
+            <li><a href="#">NATO Phonetic Alphabet</a></li>
+            <li><a href="/docs/communication/radio-etiquette.html">Radio Etiquette</a></li>
+            <li><a href="#">Emergency Messages</a></li>
+            <li><a href="#">Urgent Assistance</a></li>
+            <li><a href="#">Plain English Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-footer">Public - No login required</div>
+      </nav>
+    </aside>
+
+    <main class="content" id="content" tabindex="0">
+      <div class="breadcrumbs" aria-label="Breadcrumbs"><a href="/index.html">Home</a> / <a href="/docs/on-duty-bulletin/state-codes/index.html">On Duty Bulletin</a> / <span>State Codes</span></div>
+
+      <article class="card doc">
+        <div class="doc-meta">
+          <h1 id="state-codes">State Codes</h1>
+          <div class="meta-row">
+            <span>Last updated: 2026-07-21</span>
+            <div class="doc-actions">
+              <button id="print-btn" class="btn small">Print</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="lede">Short reference of operational state codes used across Police Scotland units. This page is a roleplay-themed, original Police Scotland adaptation.</p>
+
+        <div class="callout info">Info: These codes are a simplified, roleplay-friendly adaptation and not an exact reproduction of any real police communication protocol.</div>
+
+        <section>
+          <h2 id="table">State codes table</h2>
+          <div class="table-wrap">
+            <table class="doc-table" aria-describedby="table">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Meaning</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>State 0</td>
+                  <td>Emergency / Officer in danger</td>
+                  <td>Immediate life-threatening incident. Units should give highest priority and request urgent assistance.</td>
+                  <td><code>Unit 45, State 0, officer down at High Street</code></td>
+                  <td><button class="copy-btn" data-copy="State 0">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 1</td>
+                  <td>Available</td>
+                  <td>Officer is available for deployment.</td>
+                  <td><code>Unit 12, State 1, available</code></td>
+                  <td><button class="copy-btn" data-copy="State 1">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 2</td>
+                  <td>En route</td>
+                  <td>Officer is travelling to an assignment.</td>
+                  <td><code>Unit 7, State 2, en route to incident</code></td>
+                  <td><button class="copy-btn" data-copy="State 2">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 3</td>
+                  <td>At scene</td>
+                  <td>Officer has arrived at the location and is on scene.</td>
+                  <td><code>Unit 3, State 3, on scene at junction</code></td>
+                  <td><button class="copy-btn" data-copy="State 3">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 4</td>
+                  <td>Incident complete</td>
+                  <td>Primary actions finished — returning to routine duties or awaiting tasking.</td>
+                  <td><code>Unit 21, State 4, incident clear</code></td>
+                  <td><button class="copy-btn" data-copy="State 4">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 5</td>
+                  <td>Meal break</td>
+                  <td>Officer on authorised break. Not available for immediate emergency work.</td>
+                  <td><code>Unit 9, State 5, meal</code></td>
+                  <td><button class="copy-btn" data-copy="State 5">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 6</td>
+                  <td>Busy / unavailable</td>
+                  <td>Engaged in an activity and not available for new tasks.</td>
+                  <td><code>Unit 2, State 6, dealing with custody</code></td>
+                  <td><button class="copy-btn" data-copy="State 6">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 7</td>
+                  <td>Prisoner on board</td>
+                  <td>Transporting a detained person.</td>
+                  <td><code>Unit 11, State 7, prisoner on board, ETD 15</code></td>
+                  <td><button class="copy-btn" data-copy="State 7">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 8</td>
+                  <td>Returning to station</td>
+                  <td>Officer heading back to station for admin or resupply.</td>
+                  <td><code>Unit 6, State 8, returning to base</code></td>
+                  <td><button class="copy-btn" data-copy="State 8">Copy</button></td>
+                </tr>
+                <tr>
+                  <td>State 9</td>
+                  <td>Request urgent assistance</td>
+                  <td>Immediate assistance requested — may be followed by location and nature.</td>
+                  <td><code>Unit 45, State 9, urgent assistance required</code></td>
+                  <td><button class="copy-btn" data-copy="State 9">Copy</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="examples">Examples</h2>
+          <ol>
+            <li><strong>Officer reports an emergency:</strong>
+              <blockquote>Unit 45: "State 0, officer injured, location: High Street"</blockquote>
+            </li>
+            <li><strong>Routine status update:</strong>
+              <blockquote>Unit 12: "State 1, available"</blockquote>
+            </li>
+          </ol>
+        </section>
+
+        <div class="doc-footer">
+          <div class="nav-links">
+            <a href="#" class="prev">&larr; Previous</a>
+            <a href="#" class="next">Next &rarr;</a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="toc" id="toc">
+      <div class="card">
+        <h4>On this page</h4>
+        <ul>
+          <li><a href="#table">State codes table</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

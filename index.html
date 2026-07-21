@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Police Scotland Knowledge Base</title>
+  <meta name="description" content="Public Police Scotland knowledge base - static HTML export">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">PS</div>
+        <div class="site-title">
+          <div class="title">Police Scotland Knowledge Base</div>
+          <div class="subtitle">Public documentation portal</div>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="global-search" class="search" placeholder="Search (press /)" aria-label="Search site">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn">Dark</button>
+        <a class="btn primary" href="mailto:issues@policescotland.example">Report an Issue</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-top">
+        <div class="contents-title">Contents</div>
+        <button id="toggle-sidebar" class="btn small">Collapse</button>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <div class="nav-group">
+          <div class="nav-heading">On Duty Bulletin</div>
+          <ul>
+            <li><a href="/docs/on-duty-bulletin/state-codes/index.html">State Codes</a></li>
+            <li><a href="#">Status Codes</a></li>
+            <li><a href="#">Incident Grading</a></li>
+            <li><a href="#">Priority Levels</a></li>
+            <li><a href="#">Callsigns</a></li>
+            <li><a href="#">Airwave Radio Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-heading">Communication</div>
+          <ul>
+            <li><a href="#">NATO Phonetic Alphabet</a></li>
+            <li><a href="/docs/communication/radio-etiquette.html">Radio Etiquette</a></li>
+            <li><a href="#">Emergency Messages</a></li>
+            <li><a href="#">Urgent Assistance</a></li>
+            <li><a href="#">Plain English Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-heading">Operational Procedures</div>
+          <ul>
+            <li><a href="#">Vehicle Stops</a></li>
+            <li><a href="#">Pursuits</a></li>
+            <li><a href="#">TPAC</a></li>
+            <li><a href="#">Stinger Deployment</a></li>
+            <li><a href="#">Road Closures</a></li>
+            <li><a href="#">Checkpoints</a></li>
+            <li><a href="#">ANPR</a></li>
+            <li><a href="#">Collision Procedures</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-footer">Public - No login required</div>
+      </nav>
+    </aside>
+
+    <main class="content" id="content" tabindex="0">
+      <div class="breadcrumbs" aria-label="Breadcrumbs"><a href="/index.html">Home</a> / <span>Welcome</span></div>
+
+      <article class="card">
+        <h1>Welcome to the Police Scotland Knowledge Base</h1>
+        <p class="lede">A public, read-only documentation portal for common procedures, reference and training — suitable for roleplay and training scenarios.</p>
+
+        <section class="grid-3">
+          <div class="card small">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/docs/on-duty-bulletin/state-codes/index.html">State Codes</a></li>
+              <li><a href="/docs/communication/radio-etiquette.html">Radio Etiquette</a></li>
+              <li><a href="#">Arrest Procedure</a></li>
+            </ul>
+          </div>
+
+          <div class="card small">
+            <h3>Featured Procedures</h3>
+            <div class="feature">
+              <h4>Dynamic Risk Assessment</h4>
+              <p class="muted">Continuous assessment of threat and tactical response.</p>
+            </div>
+            <div class="feature">
+              <h4>Stop and Search</h4>
+              <p class="muted">Roleplay-friendly procedure for lawful stop and search.</p>
+            </div>
+          </div>
+
+          <div class="card small">
+            <h3>Emergency Quick Reference</h3>
+            <ul>
+              <li><strong>999</strong> — Emergency services</li>
+              <li><strong>State 0</strong> — Officer in immediate danger</li>
+            </ul>
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+    <aside class="toc" id="toc">
+      <div class="card">
+        <h4>Table of contents</h4>
+        <ul id="toc-list">
+          <li><a href="#">State Codes</a></li>
+          <li><a href="#">Radio Etiquette</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

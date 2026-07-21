@@ -1,0 +1,68 @@
+/* Police Scotland knowledge base static styles */
+:root{
+  --ps-primary:#003B6F;
+  --bg:#f3f4f6;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --max:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#0f172a;background:var(--bg)}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e6edf6}
+.header-inner{display:flex;align-items:center;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:var(--ps-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.site-title .title{font-weight:600}
+.site-title .subtitle{font-size:12px;color:var(--muted)}
+.search-wrap{flex:1;position:relative}
+.search{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #dbeafe}
+.search-results{position:absolute;top:44px;left:0;right:0;background:#fff;border:1px solid #e6edf6;max-height:320px;overflow:auto;box-shadow:0 4px 12px rgba(2,6,23,0.08);}
+.header-actions{display:flex;gap:8px;align-items:center}
+.btn{border:1px solid #cbd5e1;background:#fff;padding:8px 12px;border-radius:6px;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.primary{background:var(--ps-primary);color:#fff;border-color:var(--ps-primary)}
+.layout{display:grid;grid-template-columns:280px 1fr 260px;gap:24px;padding:24px 0}
+.sidebar{background:transparent;height:calc(100vh - 84px);overflow:auto;padding-right:8px}
+.sidebar-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:8px}
+.contents-title{font-weight:600}
+.nav-group{margin-bottom:18px}
+.nav-heading{font-size:12px;color:var(--muted);margin-bottom:6px}
+.nav-group ul{list-style:none;padding:0;margin:0}
+.nav-group li{margin-bottom:6px}
+.nav-group a{color:#0f172a;text-decoration:none}
+.nav-group a.active{color:var(--ps-primary);font-weight:600}
+.nav-footer{font-size:12px;color:var(--muted);margin-top:8px}
+.content{min-height:60vh}
+.card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 1px 2px rgba(2,6,23,0.04)}
+.lede{color:var(--muted);margin-top:6px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px}
+.card.small{padding:12px}
+.feature h4{margin:0}
+.muted{color:var(--muted);font-size:13px}
+.toc{height:fit-content}
+.toc .card{position:sticky;top:96px}
+.breadcrumbs{font-size:13px;color:var(--muted);margin-bottom:12px}
+.doc{padding:22px}
+.doc h1{margin-top:0}
+.meta-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.doc-actions{display:flex;gap:8px}
+.callout{padding:12px;border-radius:6px;margin:12px 0}
+.callout.info{background:#eff8ff;border-left:4px solid #3b82f6}
+.table-wrap{overflow:auto;margin-top:12px}
+.doc-table{width:100%;border-collapse:collapse}
+.doc-table th,.doc-table td{border-bottom:1px solid #eef2f7;padding:10px;text-align:left}
+.doc-table code{background:#f8fafc;padding:2px 6px;border-radius:4px;font-family:monospace}
+.copy-btn{padding:6px 8px;border-radius:6px;border:1px solid #e2e8f0;background:#fff;cursor:pointer}
+.doc-footer{margin-top:18px}
+.nav-links{display:flex;justify-content:space-between}
+.prev,.next{text-decoration:none;color:var(--ps-primary)}
+@media(max-width:1024px){
+  .layout{grid-template-columns:64px 1fr 0px}
+  .sidebar{width:64px}
+  .nav-group ul li a{font-size:13px}
+  .grid-3{grid-template-columns:1fr}
+  .toc{display:none}
+}
+/* reading progress */
+#reading-progress{position:fixed;left:0;top:0;height:3px;background:linear-gradient(90deg,var(--ps-primary),#1e90ff);z-index:60;width:0}
