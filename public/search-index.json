@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "State Codes",
+    "path": "/docs/on-duty-bulletin/state-codes",
+    "snippet": "Common operational state codes used for radio and status updates.",
+    "content": "state 0 officer in danger state 1 available state 2 en route"
+  },
+  {
+    "id": "2",
+    "title": "Radio Etiquette",
+    "path": "/docs/communication/radio-etiquette",
+    "snippet": "Basic guidance for clear and effective radio calls.",
+    "content": "use plain english prowords call signs phonetic"
+  }
+]
